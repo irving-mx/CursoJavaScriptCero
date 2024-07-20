@@ -30,7 +30,7 @@ console.log(modulo, exponenciacion)
 const resultado = 0.1 + 0.2
 console.log(resultado)
 console.log(resultado.toFixed(2))
-// el metodo toFixed(numero), muestra el "numero" de decimales despues del 
+// el metodo toFixed(numero), muestra el "numero" de decimales despues del punto
 console.log(resultado === 0.3)
 
 // Operaciones Avanzadas
