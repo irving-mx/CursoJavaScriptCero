@@ -60,3 +60,17 @@ const wordFrecuency=words2.reduce((accumulator,currentValue)=>{
             accumulator[currentValue]=1}
 return accumulator},{})
 console.log(wordFrecuency)
+
+
+
+// Calificación aprobatoria
+// Tomar un array de calificaciones como entrada
+// calcula el promedio unicamente de las calificaciones aprobatorias (mayores o iguales a 70)
+
+const calificaciones = [85, 92, 60, 78, 95, 66, 88, 50, 94]
+
+const calAprobadas = calificaciones.filter((calificacion)=> calificacion >= 70)
+console.log('Original Grades: ',calificaciones)
+console.log('Passing Grades: ',calAprobadas)
+const promedioCal = calAprobadas.reduce((sumatoria,calApr)=> sumatoria += calApr ) / calAprobadas.length
+console.log('Average Passing Grade: ',promedioCal)
