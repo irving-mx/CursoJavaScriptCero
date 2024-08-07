@@ -36,3 +36,28 @@ const lastIndexOfClavado2 = puntosClavados.lastIndexOf(26)
 
 console.log(`La ultima posición de 76 es: ${lastIndexOfClavado} `)
 console.log(`La ultima posición de 26(false) es: ${lastIndexOfClavado2} `)
+
+
+// Exercise Findind substring indices
+
+const stringArray = ['apple','banana','orange','grape','banana','kiwi']
+const target = 'banana'
+
+    function findStringIndicesInArray(array,target){  
+        const result = {
+            includesTargetString: false,
+            firstOcurrenceIndex: -1,
+            lastOcurrenceIndex: -1
+        }
+
+        array.forEach((element,index)=>{
+            if(element.includes(target)){
+                result.includesTargetString = true
+                result.firstOcurrenceIndex=array.indexOf(target)
+                result.lastOcurrenceIndex= array.lastIndexOf(target)
+            }
+        })
+        return result
+    }   
+const result=findStringIndicesInArray(stringArray,target)
+console.log(result)
