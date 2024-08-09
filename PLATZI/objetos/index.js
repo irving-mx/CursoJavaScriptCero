@@ -24,4 +24,21 @@ const persona = {
 }
 
 console.log(persona.nombre)
-persona.saludar()
+// persona.saludar()
+
+persona.telefono = "555-555-5555";
+console.log(persona.telefono)
+console.log(persona)
+
+
+persona.despedir= ()=>{
+    console.log("Adios baby")
+}
+
+persona.despedir()
+console.log(persona.direccion.calle)
+delete persona.telefono
+console.log(persona)
+
+delete persona.despedir
+console.log(persona)
